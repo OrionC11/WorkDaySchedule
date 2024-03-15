@@ -39,7 +39,7 @@ The following animation demonstrates the application functionality:
 
 ## Screenshot
 
-![Screenshot later than 5PM](./assets/DayPlanner.png)
+![Screenshot later than 5PM](./Assets/DayPlanner.png)
 
 ## Grading Requirements
 
