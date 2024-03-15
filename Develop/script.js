@@ -1,4 +1,5 @@
 var saveButton = $('.saveBtn')
+// this builds the function to save everything to local storage.
 var save = function () {
   var value = $(this).siblings('.description').val()
   var hour = $(this).parent().attr('id')
@@ -15,8 +16,12 @@ $('#hour-15.description').val(localStorage.getItem('hour-15'))
 $('#hour-16.description').val(localStorage.getItem('hour-16'))
 $('#hour-17.description').val(localStorage.getItem('hour-17'))
 
+
+// this on click function will run the save function we created above when you click the save button
 saveButton.on('click', save)
-const currentHour = dayjs().hour().format('HH')
+// This uses DayJS to set the current hour
+const currentHour = dayjs().hour().format('H')
+// this updates the time-block background colors by changing the class based on the current time
 $('.time-block').each(function () {
   var hour = parseInt($(this).attr('id').split('-')[1]);
   if (hour < currentHour) {
