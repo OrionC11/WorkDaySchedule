@@ -20,7 +20,7 @@ $('#hour-17.description').val(localStorage.getItem('hour-17'))
 // this on click function will run the save function we created above when you click the save button
 saveButton.on('click', save)
 // This uses DayJS to set the current hour
-const currentHour = dayjs().hour().format('H')
+const currentHour = dayjs().hour();
 // this updates the time-block background colors by changing the class based on the current time
 $('.time-block').each(function () {
   var hour = parseInt($(this).attr('id').split('-')[1]);
